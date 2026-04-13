@@ -1,0 +1,11 @@
+{
+  "name": "SeonMun 선문",
+  "short_name": "SeonMun",
+  "description": "Bilingual North Korea Missions Research Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C0A08",
+  "theme_color": "#C45B22",
+  "lang": "en",
+  "icons": []
+}

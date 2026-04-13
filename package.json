@@ -1,0 +1,19 @@
+{
+  "name": "seonmun",
+  "version": "1.0.0",
+  "description": "SeonMun 선문 — Bilingual North Korea Missions Research Platform",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250404.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
+  },
+  "dependencies": {}
+}

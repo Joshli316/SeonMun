@@ -1,0 +1,8 @@
+name = "seonmun"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Pages deployment: wrangler pages deploy dist/
+
+# Worker (API proxy) — deployed separately if needed
+# To deploy the worker: cd worker && wrangler deploy

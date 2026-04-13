@@ -1,0 +1,293 @@
+[
+  {
+    "year": 1784,
+    "era": "catholic",
+    "title": { "en": "First Catholic Converts", "ko": "최초의 천주교 신자" },
+    "description": { "en": "Yi Seung-hun is baptized in Beijing and returns to Korea, founding the first Christian community — the only nation where Catholicism was established by lay people without missionaries.", "ko": "이승훈이 북경에서 세례를 받고 조선으로 돌아와 최초의 기독교 공동체를 설립 — 선교사 없이 평신도들이 천주교를 세운 유일한 나라." },
+    "category": "missions",
+    "significance": { "en": "Korea's unique claim: the only self-evangelized Catholic nation", "ko": "한국의 독특한 위치: 유일한 자체 복음화 천주교 국가" }
+  },
+  {
+    "year": 1791,
+    "era": "catholic",
+    "title": { "en": "First Martyrdoms", "ko": "최초의 순교" },
+    "description": { "en": "Two Catholic converts beheaded for refusing to perform Confucian ancestral rites — the beginning of nearly a century of persecution.", "ko": "유교 제사를 거부한 두 명의 천주교 신자가 참수됨 — 거의 한 세기에 걸친 박해의 시작." },
+    "category": "persecution",
+    "significance": { "en": "Established the pattern: Christianity vs. Confucian state", "ko": "패턴 확립: 기독교 대 유교 국가" }
+  },
+  {
+    "year": 1839,
+    "era": "catholic",
+    "title": { "en": "Gi-hae Persecution", "ko": "기해박해" },
+    "description": { "en": "Major crackdown kills three French missionaries and many Korean Catholics. The persecutions intensify over the following decades.", "ko": "대대적인 탄압으로 3명의 프랑스 선교사와 많은 한국인 천주교 신자가 순교. 이후 수십 년간 박해가 심화됨." },
+    "category": "persecution"
+  },
+  {
+    "year": 1846,
+    "era": "catholic",
+    "title": { "en": "Andrew Kim Dae-geon Martyred", "ko": "김대건 신부 순교" },
+    "description": { "en": "Korea's first ordained Catholic priest, Andrew Kim Dae-geon, is executed at age 25. He is later canonized as one of 103 Korean martyrs.", "ko": "한국 최초의 천주교 사제 김대건 신부가 25세의 나이로 처형. 이후 103위 한국 순교자 중 한 명으로 시성." },
+    "category": "missions"
+  },
+  {
+    "year": 1866,
+    "era": "catholic",
+    "title": { "en": "Byeong-in Persecution & Robert Jermain Thomas", "ko": "병인박해와 로버트 저메인 토마스" },
+    "description": { "en": "The largest persecution: ~10,000 Catholics killed. The same year, Welsh missionary Robert Jermain Thomas is martyred on the General Sherman, throwing Bibles onto the shore of the Taedong River near Pyongyang.", "ko": "최대 규모의 박해: 약 10,000명의 천주교 신자 순교. 같은 해, 웨일스 선교사 로버트 저메인 토마스가 제너럴 셔먼호에서 순교하며 평양 근처 대동강 강변에 성경을 던짐." },
+    "category": "missions",
+    "significance": { "en": "Thomas's Bibles became wallpaper — the homeowner later became a Christian", "ko": "토마스의 성경이 벽지가 됨 — 그 집 주인은 후에 기독교인이 됨" }
+  },
+  {
+    "year": 1882,
+    "era": "catholic",
+    "title": { "en": "Religious Freedom Granted", "ko": "종교의 자유 부여" },
+    "description": { "en": "Catholics are granted the legal right to practice openly following treaties with Western powers.", "ko": "서양 열강과의 조약에 따라 천주교 신자에게 공개적 신앙 실천의 법적 권리가 부여됨." },
+    "category": "political"
+  },
+  {
+    "year": 1884,
+    "era": "protestant",
+    "title": { "en": "First Protestant Missionary Arrives", "ko": "최초의 개신교 선교사 도착" },
+    "description": { "en": "Horace Newton Allen arrives as a physician — the first resident Protestant missionary in Korea. He gains royal favor by treating a prince during the Gapsin Coup.", "ko": "호레이스 뉴턴 알렌이 의사로 도착 — 한국 최초의 상주 개신교 선교사. 갑신정변 때 왕자를 치료하여 왕실의 호의를 얻음." },
+    "category": "missions"
+  },
+  {
+    "year": 1885,
+    "era": "protestant",
+    "title": { "en": "Underwood and Appenzeller Arrive", "ko": "언더우드와 아펜젤러 도착" },
+    "description": { "en": "Horace Grant Underwood (Presbyterian) and Henry Appenzeller (Methodist) arrive on Easter Sunday. They found educational institutions that become Yonsei University and Pai Chai Academy.", "ko": "호레이스 그랜트 언더우드(장로교)와 헨리 아펜젤러(감리교)가 부활절에 도착. 연세대학교와 배재학당이 되는 교육 기관을 설립." },
+    "category": "missions"
+  },
+  {
+    "year": 1890,
+    "era": "protestant",
+    "title": { "en": "Samuel Moffett Arrives in Pyongyang", "ko": "사무엘 모펫 평양 도착" },
+    "description": { "en": "Samuel Austin Moffett, the 'Apostle to Korea,' begins his mission in Pyongyang. He founds Soongsil Academy and makes Pyongyang the center of Korean Protestantism.", "ko": "한국의 사도' 사무엘 오스틴 모펫이 평양에서 선교를 시작. 숭실학당을 설립하고 평양을 한국 개신교의 중심지로 만듦." },
+    "category": "missions",
+    "significance": { "en": "Moffett's life work was in the city that became the capital of atheism", "ko": "모펫의 평생 사역은 무신론의 수도가 된 도시에서 이루어짐" }
+  },
+  {
+    "year": 1903,
+    "era": "protestant",
+    "title": { "en": "Wonsan Revival", "ko": "원산 부흥" },
+    "description": { "en": "A spiritual revival begins in Wonsan through the prayers of missionaries R.A. Hardie and others, setting the stage for the Great Revival.", "ko": "선교사 R.A. 하디 등의 기도를 통해 원산에서 영적 부흥이 시작, 대부흥의 무대를 마련." },
+    "category": "missions"
+  },
+  {
+    "year": 1907,
+    "era": "protestant",
+    "title": { "en": "The Great Pyongyang Revival", "ko": "평양 대부흥" },
+    "description": { "en": "At Jangdaehyeon Church in Pyongyang, Pastor Kil Sun-ju's public confession of sin triggers a chain reaction. Spontaneous, simultaneous public confession — previously unknown in Korean culture — sweeps through the city. 30,000+ converts. One of the most significant revival events in world Christianity.", "ko": "평양 장대현교회에서 길선주 목사의 공개 죄 고백이 연쇄 반응을 촉발. 한국 문화에서 이전에 알려지지 않았던 자발적이고 동시적인 공개 고백이 도시를 휩쓸음. 30,000명 이상 회심. 세계 기독교 역사상 가장 중요한 부흥 중 하나." },
+    "category": "missions",
+    "significance": { "en": "The event that made Pyongyang the 'Jerusalem of the East'", "ko": "평양을 '동방의 예루살렘'으로 만든 사건" }
+  },
+  {
+    "year": 1910,
+    "era": "japanese",
+    "title": { "en": "Japan Annexes Korea", "ko": "일본의 한국 병합" },
+    "description": { "en": "Japan formally annexes Korea, beginning 35 years of colonial rule. Korean Christianity becomes a center of nationalist resistance.", "ko": "일본이 공식적으로 한국을 병합, 35년간의 식민 통치 시작. 한국 기독교가 민족주의 저항의 중심이 됨." },
+    "category": "political"
+  },
+  {
+    "year": 1919,
+    "era": "japanese",
+    "title": { "en": "March 1st Movement", "ko": "3·1 운동" },
+    "description": { "en": "Christians play a leading role in the March 1st independence movement. 16 of the 33 signers of the Declaration of Independence are Christians — though Christians are only ~1.5% of the population.", "ko": "기독교인들이 3·1 독립운동에서 주도적 역할을 함. 독립선언서 서명자 33인 중 16인이 기독교인 — 기독교인이 전체 인구의 약 1.5%에 불과함에도." },
+    "category": "political",
+    "significance": { "en": "Christianity = Korean nationalism in the colonial period", "ko": "식민지 시대 기독교 = 한국 민족주의" }
+  },
+  {
+    "year": 1935,
+    "era": "japanese",
+    "title": { "en": "Shinto Shrine Controversy Begins", "ko": "신사참배 논쟁 시작" },
+    "description": { "en": "Japan demands all Koreans bow at Shinto shrines. Most Korean churches eventually comply under pressure. A courageous minority, including Ju Ki-Chul, refuse.", "ko": "일본이 모든 한국인에게 신사참배를 요구. 대부분의 한국 교회가 압력에 굴복. 주기철을 포함한 용감한 소수가 거부." },
+    "category": "persecution"
+  },
+  {
+    "year": 1944,
+    "era": "japanese",
+    "title": { "en": "Ju Ki-Chul Dies in Prison", "ko": "주기철 목사 옥중 순교" },
+    "description": { "en": "Presbyterian pastor Ju Ki-Chul dies in Pyongyang Prison after years of imprisonment for refusing to bow at Shinto shrines. Imprisoned, released, re-imprisoned, he never wavered — a model of faithful defiance.", "ko": "장로교 목사 주기철이 신사참배 거부로 수년간 투옥된 후 평양형무소에서 순교. 투옥, 석방, 재투옥 — 한 번도 흔들리지 않은 신실한 저항의 모범." },
+    "category": "persecution",
+    "significance": { "en": "One of Korean Christianity's greatest martyrs", "ko": "한국 기독교 최고의 순교자 중 한 명" }
+  },
+  {
+    "year": 1945,
+    "era": "division",
+    "title": { "en": "Liberation and Division", "ko": "광복과 분단" },
+    "description": { "en": "Japan's defeat ends 35 years of colonial rule, but Korea is immediately divided at the 38th parallel. The Soviet Union occupies the North; the US occupies the South. Pyongyang — the 'Jerusalem of the East' with 100+ churches — falls under Soviet control.", "ko": "일본의 패전으로 35년간의 식민 통치가 끝나지만, 한국은 즉시 38선에서 분단됨. 소련이 북한을, 미국이 남한을 점령. 100개 이상의 교회가 있던 '동방의 예루살렘' 평양이 소련의 통제 하에 놓임." },
+    "category": "political",
+    "significance": { "en": "The moment that sealed Pyongyang's Christian fate", "ko": "평양의 기독교 운명을 결정지은 순간" }
+  },
+  {
+    "year": 1946,
+    "era": "division",
+    "title": { "en": "Kim Il-sung Begins Anti-Christian Campaign", "ko": "김일성 반기독교 캠페인 시작" },
+    "description": { "en": "Under Soviet backing, Kim Il-sung begins systematic suppression of Christianity. Churches are closed, pastors arrested. An estimated 300,000 Christians begin fleeing south.", "ko": "소련의 지원 하에 김일성이 기독교의 체계적 억압을 시작. 교회가 폐쇄되고 목사들이 체포됨. 약 30만 명의 기독교인이 남쪽으로 피난하기 시작." },
+    "category": "persecution",
+    "significance": { "en": "The beginning of the end for visible Christianity in the North", "ko": "북한에서 가시적 기독교의 종말의 시작" }
+  },
+  {
+    "year": 1948,
+    "era": "division",
+    "title": { "en": "DPRK Established", "ko": "조선민주주의인민공화국 수립" },
+    "description": { "en": "The Democratic People's Republic of Korea is formally established with Kim Il-sung as leader. The constitution nominally guarantees religious freedom, but in practice persecution intensifies.", "ko": "김일성을 수반으로 조선민주주의인민공화국이 공식 수립. 헌법은 명목상 종교의 자유를 보장하지만, 실제로는 박해가 심화됨." },
+    "category": "political"
+  },
+  {
+    "year": 1950,
+    "era": "division",
+    "title": { "en": "Korean War Begins", "ko": "한국전쟁 발발" },
+    "description": { "en": "North Korea invades the South on June 25. During the war, remaining Christian leaders in the North are killed, imprisoned, or forced into hiding. The 'Jerusalem of the East' is destroyed — most of Pyongyang's churches are reduced to rubble.", "ko": "6월 25일 북한이 남한을 침공. 전쟁 중 북한의 남은 기독교 지도자들이 살해, 투옥, 또는 은신을 강요당함. '동방의 예루살렘'이 파괴됨 — 평양의 교회 대부분이 잔해로 변함." },
+    "category": "persecution",
+    "significance": { "en": "The Korean War completes the destruction of visible Christianity in the North", "ko": "한국전쟁이 북한에서 가시적 기독교의 파괴를 완성" }
+  },
+  {
+    "year": 1950,
+    "era": "division",
+    "title": { "en": "Son Yang-won Executed", "ko": "손양원 목사 순교" },
+    "description": { "en": "Pastor Son Yang-won — the 'Saint of Love' — is executed by communists. He had previously forgiven and adopted the man who murdered his two sons. One of the most extraordinary forgiveness stories in Christian history.", "ko": "사랑의 성자' 손양원 목사가 공산주의자들에 의해 처형됨. 그는 이전에 두 아들을 살해한 사람을 용서하고 양자로 삼았음. 기독교 역사상 가장 놀라운 용서 이야기 중 하나." },
+    "category": "persecution",
+    "significance": { "en": "Forgave his sons' killer, then adopted him", "ko": "아들의 살인자를 용서하고 양자로 삼음" }
+  },
+  {
+    "year": 1958,
+    "era": "kim1",
+    "title": { "en": "Classification System Established", "ko": "성분 분류 체계 확립" },
+    "description": { "en": "Kim Il-sung establishes the songbun social classification system. Christians are classified as 'hostile class' — the lowest tier, facing systematic discrimination in housing, education, employment, and food allocation.", "ko": "김일성이 성분 사회 분류 체계를 확립. 기독교인은 '적대계층'으로 분류 — 주거, 교육, 고용, 식량 배급에서 체계적 차별을 받는 최하위 계층." },
+    "category": "persecution"
+  },
+  {
+    "year": 1967,
+    "era": "kim1",
+    "title": { "en": "Christians Sent to Prison Camps", "ko": "기독교인 정치범수용소 수감" },
+    "description": { "en": "Mass deportation of known Christians and their families to political prison camps (kwanliso) in remote mountain areas. An estimated 50,000-70,000 people with Christian family backgrounds are imprisoned over the following decades.", "ko": "알려진 기독교인과 그 가족을 외딴 산간 지역의 정치범수용소(관리소)로 대량 추방. 이후 수십 년에 걸쳐 기독교 가문 출신 약 5만-7만 명이 수감됨." },
+    "category": "persecution"
+  },
+  {
+    "year": 1972,
+    "era": "kim1",
+    "title": { "en": "Juche Becomes State Ideology", "ko": "주체사상 국가 이념화" },
+    "description": { "en": "The new constitution enshrines Juche as the sole guiding ideology. Kim Il-sung — raised by a Presbyterian deaconess mother — has built a system that mirrors Christianity: Trinity → Three Kims, Ten Commandments → Ten Principles, eternal life → Eternal President.", "ko": "새 헌법이 주체사상을 유일한 지도 이념으로 명문화. 장로교 집사인 어머니 밑에서 자란 김일성은 기독교를 모방한 체제를 구축: 삼위일체 → 3대 김씨, 십계명 → 10대 원칙, 영생 → 영원한 주석." },
+    "category": "cultural",
+    "significance": { "en": "Juche didn't just suppress Christianity — it replaced it", "ko": "주체사상은 기독교를 억압하기만 한 것이 아니라 대체함" }
+  },
+  {
+    "year": 1988,
+    "era": "kim1",
+    "title": { "en": "Bongsu Church Opens", "ko": "봉수교회 개방" },
+    "description": { "en": "The regime opens Bongsu Protestant Church and Changchung Catholic Church in Pyongyang — 'show churches' for foreign visitors. Whether genuine worship occurs is debated; most analysts consider them diplomatic props.", "ko": "정권이 평양에 봉수개신교회와 장충천주교회를 개방 — 외국인 방문객을 위한 '전시용 교회'. 진정한 예배가 이루어지는지는 논란; 대부분의 분석가들은 외교적 전시물로 간주." },
+    "category": "institutional",
+    "significance": { "en": "Four show churches — real worship or diplomatic theater?", "ko": "4개의 전시용 교회 — 진정한 예배인가 외교적 연극인가?" }
+  },
+  {
+    "year": 1992,
+    "era": "kim1",
+    "title": { "en": "Billy Graham Visits Pyongyang", "ko": "빌리 그레이엄 평양 방문" },
+    "description": { "en": "Evangelist Billy Graham visits Pyongyang and preaches at Bongsu Church. He later reports being uncertain whether the congregation was genuine or staged.", "ko": "전도자 빌리 그레이엄이 평양을 방문하여 봉수교회에서 설교. 이후 그는 회중이 진정한 것인지 연출된 것인지 확신할 수 없었다고 보고." },
+    "category": "institutional"
+  },
+  {
+    "year": 1994,
+    "era": "kim2",
+    "title": { "en": "Kim Il-sung Dies — Famine Begins", "ko": "김일성 사망 — 기근 시작" },
+    "description": { "en": "Kim Il-sung dies and is declared 'Eternal President.' Kim Jong-il succeeds him. The 'Arduous March' famine (1994-1998) kills an estimated 600,000-2.5 million. Some defectors report that desperate people turned to prayer during the famine.", "ko": "김일성이 사망하고 '영원한 주석'으로 선언됨. 김정일이 권력 승계. '고난의 행군' 기근(1994-1998)으로 약 60만-250만 명이 사망. 일부 탈북민은 기근 동안 절박한 사람들이 기도하기 시작했다고 보고." },
+    "category": "political",
+    "significance": { "en": "The famine may have created a second wave of secret faith", "ko": "기근이 비밀 신앙의 두 번째 물결을 만들었을 수 있음" }
+  },
+  {
+    "year": 1997,
+    "era": "kim2",
+    "title": { "en": "First Major Defector Arrivals in South Korea", "ko": "최초의 대규모 탈북민 남한 도착" },
+    "description": { "en": "Famine drives the first large wave of defectors to South Korea. Many encounter Christianity for the first time through Chinese-Korean border churches and South Korean resettlement programs. Churches become key players in defector support.", "ko": "기근이 최초의 대규모 탈북민 물결을 남한으로 이끔. 많은 사람들이 중국-한국 국경 교회와 남한 정착 프로그램을 통해 처음으로 기독교를 접함. 교회가 탈북민 지원의 핵심 주체가 됨." },
+    "category": "missions"
+  },
+  {
+    "year": 2002,
+    "era": "kim2",
+    "title": { "en": "Open Doors Ranks NK #1", "ko": "오픈도어즈 북한 1위 선정" },
+    "description": { "en": "Open Doors ranks North Korea #1 on its World Watch List of countries where Christians face the most persecution. It will remain #1 for 23+ consecutive years.", "ko": "오픈도어즈가 기독교인이 가장 심한 박해를 받는 나라 세계감시목록에서 북한을 1위로 선정. 23년 이상 연속 1위를 유지." },
+    "category": "institutional",
+    "significance": { "en": "The world's worst persecutor — for over two decades and counting", "ko": "세계 최악의 박해국 — 20년 이상 연속" }
+  },
+  {
+    "year": 2006,
+    "era": "kim2",
+    "title": { "en": "NKDB Founded", "ko": "북한인권정보센터(NKDB) 설립" },
+    "description": { "en": "The North Korea Database Center for Human Rights (NKDB) is established in Seoul, systematically documenting human rights violations including religious persecution through defector testimony.", "ko": "북한인권정보센터(NKDB)가 서울에 설립, 탈북민 증언을 통해 종교 박해를 포함한 인권 침해를 체계적으로 기록." },
+    "category": "institutional"
+  },
+  {
+    "year": 2008,
+    "era": "kim2",
+    "title": { "en": "Kim Jong-il's Christian Family Roots Documented", "ko": "김정일의 기독교 가족 뿌리 기록" },
+    "description": { "en": "Scholarship increasingly documents that Kim Il-sung's mother Kang Pan-suk was a devout Presbyterian deaconess, his grandfather was a church elder, and young Kim grew up singing hymns at church. The founder of the world's most anti-Christian state was raised Christian.", "ko": "학계에서 김일성의 어머니 강반석이 독실한 장로교 집사였고, 할아버지가 교회 장로였으며, 어린 김일성이 교회에서 찬송가를 부르며 자랐다는 사실이 점점 더 많이 기록됨. 세계에서 가장 반기독교적인 국가의 창건자가 기독교인으로 자랐음." },
+    "category": "cultural"
+  },
+  {
+    "year": 2011,
+    "era": "kim3",
+    "title": { "en": "Kim Jong-il Dies", "ko": "김정일 사망" },
+    "description": { "en": "Kim Jong-il dies and is succeeded by his son Kim Jong-un. Brief hopes for reform are quickly dashed as the new leader proves even more repressive.", "ko": "김정일이 사망하고 아들 김정은이 권력을 승계. 개혁에 대한 짧은 희망은 새 지도자가 더욱 억압적임이 밝혀지면서 빠르게 사라짐." },
+    "category": "political"
+  },
+  {
+    "year": 2013,
+    "era": "kim3",
+    "title": { "en": "Jang Song-thaek Executed", "ko": "장성택 처형" },
+    "description": { "en": "Kim Jong-un executes his own uncle Jang Song-thaek, signaling ruthless consolidation of power. The crackdown on any perceived dissent — including religious activity — intensifies.", "ko": "김정은이 자신의 삼촌 장성택을 처형, 무자비한 권력 공고화를 신호. 종교 활동을 포함한 모든 반대 의견에 대한 단속이 강화됨." },
+    "category": "political"
+  },
+  {
+    "year": 2014,
+    "era": "kim3",
+    "title": { "en": "UN Commission of Inquiry Report", "ko": "유엔 조사위원회 보고서" },
+    "description": { "en": "The UN Commission of Inquiry on Human Rights in North Korea releases a landmark report documenting 'systematic, widespread, and gross human rights violations' including specific findings on religious persecution. The report compares the state's crimes to those of Nazi Germany.", "ko": "유엔 북한인권조사위원회가 종교 박해에 관한 구체적 발견을 포함하여 '체계적이고 광범위하며 중대한 인권 침해'를 기록한 획기적 보고서를 발표. 보고서는 국가의 범죄를 나치 독일에 비교." },
+    "category": "institutional",
+    "significance": { "en": "The most authoritative documentation of NK religious persecution", "ko": "북한 종교 박해에 대한 가장 권위있는 기록" }
+  },
+  {
+    "year": 2016,
+    "era": "kim3",
+    "title": { "en": "Border Crackdown Intensifies", "ko": "국경 단속 강화" },
+    "description": { "en": "Kim Jong-un regime intensifies border security, making defection far more difficult. The flow of defectors to South Korea drops significantly. Information about the underground church becomes even harder to obtain.", "ko": "김정은 정권이 국경 보안을 강화하여 탈북이 훨씬 어려워짐. 남한으로의 탈북민 유입이 크게 감소. 지하교회에 대한 정보 획득이 더욱 어려워짐." },
+    "category": "persecution"
+  },
+  {
+    "year": 2018,
+    "era": "kim3",
+    "title": { "en": "Inter-Korean Summit Diplomacy", "ko": "남북 정상회담 외교" },
+    "description": { "en": "Kim Jong-un meets South Korean President Moon Jae-in at Panmunjom. Brief optimism about engagement, but no concrete progress on religious freedom or human rights.", "ko": "김정은이 판문점에서 문재인 대통령과 만남. 교류에 대한 짧은 낙관이 있었으나 종교의 자유나 인권에 대한 구체적 진전은 없음." },
+    "category": "political"
+  },
+  {
+    "year": 2020,
+    "era": "kim3",
+    "title": { "en": "COVID Border Closure", "ko": "코로나 국경 봉쇄" },
+    "description": { "en": "North Korea seals its borders completely in response to COVID-19, cutting off virtually all contact with the outside world. Defections drop to near zero. The already-opaque situation of Christians inside North Korea becomes a complete black box.", "ko": "북한이 코로나19에 대응하여 국경을 완전히 봉쇄, 외부 세계와의 거의 모든 접촉을 차단. 탈북이 거의 제로로 감소. 이미 불투명했던 북한 내 기독교인의 상황이 완전한 블랙박스가 됨." },
+    "category": "political",
+    "significance": { "en": "The most isolated place on earth becomes even more isolated", "ko": "지구상 가장 고립된 곳이 더욱 고립됨" }
+  },
+  {
+    "year": 2023,
+    "era": "kim3",
+    "title": { "en": "23rd Consecutive Year at #1 on World Watch List", "ko": "세계감시목록 23년 연속 1위" },
+    "description": { "en": "Open Doors again ranks North Korea #1. Defector testimonies continue to report extreme punishment — including execution — for possession of Bibles or Christian materials.", "ko": "오픈도어즈가 다시 북한을 1위로 선정. 탈북민 증언은 성경이나 기독교 자료 소지에 대한 처형을 포함한 극단적 처벌을 계속 보고." },
+    "category": "persecution"
+  },
+  {
+    "year": 2024,
+    "era": "kim3",
+    "title": { "en": "Defector Population Reaches 34,500+", "ko": "탈북민 인구 34,500명 이상 도달" },
+    "description": { "en": "The total North Korean defector population in South Korea exceeds 34,500. Churches remain the primary support network. An estimated 30-40% of defectors attend church, though the distinction between faith and social support is debated.", "ko": "남한 내 총 탈북민 인구가 34,500명을 초과. 교회가 주요 지원 네트워크로 유지됨. 탈북민의 약 30-40%가 교회에 출석하는 것으로 추정되나 신앙과 사회적 지원의 구분은 논란." },
+    "category": "missions"
+  },
+  {
+    "year": 2026,
+    "era": "kim3",
+    "title": { "en": "The Question Remains", "ko": "질문은 계속된다" },
+    "description": { "en": "242 years after the first Catholic converts, the fundamental question remains: can faith survive total suppression? Nobody outside North Korea truly knows what is happening inside. The underground church remains the greatest mystery in world Christianity.", "ko": "최초의 천주교 신자 이후 242년, 근본적인 질문은 남아 있다: 완전한 억압 속에서 신앙이 살아남을 수 있는가? 북한 밖의 누구도 내부에서 무슨 일이 일어나고 있는지 진정으로 알지 못한다. 지하교회는 세계 기독교에서 가장 큰 미스터리로 남아 있다." },
+    "category": "missions",
+    "significance": { "en": "From Jerusalem of the East to the world's darkest place — 242 years later, the story is not over", "ko": "동방의 예루살렘에서 세계에서 가장 어두운 곳으로 — 242년 후, 이야기는 끝나지 않았다" }
+  }
+]
