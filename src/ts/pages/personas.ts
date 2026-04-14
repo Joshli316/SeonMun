@@ -2,13 +2,20 @@ import { getLang } from '../i18n';
 
 const personaFiles = ['robert_thomas', 'samuel_moffett', 'kil_sunju', 'ju_kichul', 'son_yangwon', 'composite_defector'];
 
+// Map both file-based keys AND JSON id values to loaders
 const personaLoaders: Record<string, () => Promise<any>> = {
   'robert_thomas': () => import('../../data/personas/robert_thomas.json'),
+  'thomas': () => import('../../data/personas/robert_thomas.json'),
   'samuel_moffett': () => import('../../data/personas/samuel_moffett.json'),
+  'moffett': () => import('../../data/personas/samuel_moffett.json'),
   'kil_sunju': () => import('../../data/personas/kil_sunju.json'),
+  'kil-sunju': () => import('../../data/personas/kil_sunju.json'),
   'ju_kichul': () => import('../../data/personas/ju_kichul.json'),
+  'ju-kichul': () => import('../../data/personas/ju_kichul.json'),
   'son_yangwon': () => import('../../data/personas/son_yangwon.json'),
+  'son-yangwon': () => import('../../data/personas/son_yangwon.json'),
   'composite_defector': () => import('../../data/personas/composite_defector.json'),
+  'composite-defector': () => import('../../data/personas/composite_defector.json'),
 };
 
 export async function renderPersonaGallery(app: HTMLElement): Promise<void> {

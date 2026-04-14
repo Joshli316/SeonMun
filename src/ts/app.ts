@@ -237,8 +237,9 @@ function renderReportGrid(container: HTMLElement, reports: any[], lang: string, 
         </div>
         <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-sm); color: var(--text-primary);">${title}</h3>
         <p style="color: var(--text-secondary); font-size: var(--text-sm); line-height: 1.55; margin-bottom: var(--space-md);">${summary}</p>
-        <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap;">
+        <div style="display: flex; gap: var(--space-sm); flex-wrap: wrap; align-items: center;">
           ${(r.tags || []).map((tag: string) => `<span style="font-size: var(--text-xs); color: var(--text-tertiary); background: var(--bg-elevated); padding: 2px 8px; border-radius: var(--radius-full);">${tag}</span>`).join('')}
+          ${r.wordCount ? `<span style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--text-tertiary);">${r.wordCount.toLocaleString()} ${lang === 'ko' ? '단어' : 'words'}</span>` : ''}
         </div>
       </a>
     `;
