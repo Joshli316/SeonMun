@@ -1,6 +1,7 @@
 import { registerRoute, initApp } from './main';
 import { t, getLang } from './i18n';
 import { initSearch } from './search';
+import { loadReport, loadTimeline } from './data-loader';
 
 // ── Home Page ──────────────────────────────────────────────
 function renderHome(): void {
@@ -245,8 +246,8 @@ async function renderReport(): Promise<void> {
   app.innerHTML = `<div class="container section" style="color: var(--text-secondary);" data-i18n="common.loading">${t('common.loading')}</div>`;
 
   try {
-    const report = await import(`../data/reports/${id}.json`);
-    const data = report.default || report;
+    const data = await loadReport(id);
+    if (!data) throw new Error('Report not found');
     const title = lang === 'ko' ? data.title.ko : data.title.en;
     const content = lang === 'ko' ? data.content.ko : data.content.en;
 
@@ -309,8 +310,7 @@ async function renderTimeline(): Promise<void> {
   app.innerHTML = `<div class="container section" style="color: var(--text-secondary);" data-i18n="common.loading">${t('common.loading')}</div>`;
 
   try {
-    const timelineData = await import('../data/timeline.json');
-    const events = timelineData.default || timelineData;
+    const events = await loadTimeline();
 
     // Group by era
     const eras: Record<string, any[]> = {};
@@ -357,7 +357,7 @@ async function renderTimeline(): Promise<void> {
             ${eraKeys.map(era => {
               const isDarkEra = ['kim1', 'kim2', 'kim3', 'division'].includes(era);
               return `
-                <div class="era-section" data-era="${era}" id="era-${era}" style="margin-bottom: var(--space-2xl); ${isDarkEra ? 'background: rgba(0,0,0,0.3); padding: var(--space-lg); margin-left: -var(--space-lg); margin-right: -var(--space-lg);' : ''}">
+                <div class="era-section" data-era="${era}" id="era-${era}" style="margin-bottom: var(--space-2xl); ${isDarkEra ? 'background: rgba(0,0,0,0.3); padding: var(--space-lg); margin-left: calc(-1 * var(--space-lg)); margin-right: calc(-1 * var(--space-lg));' : ''}">
                   <h2 style="font-size: var(--text-xl); color: var(--accent-ember); margin-bottom: var(--space-lg);">${eraLabels[era] || era}</h2>
                   <hr class="crack-light-sm">
                   <div style="display: flex; flex-direction: column; gap: var(--space-md); padding-left: var(--space-xl); border-left: 2px solid ${isDarkEra ? 'var(--color-error)' : 'var(--border-default)'};">
@@ -385,6 +385,7 @@ async function renderTimeline(): Promise<void> {
     `;
 
     // Era filter clicks
+    // Era filter clicks — scroll to era
     document.getElementById('era-filters')?.addEventListener('click', (e) => {
       const btn = (e.target as HTMLElement).closest('.filter-btn');
       if (!btn) return;
@@ -393,6 +394,15 @@ async function renderTimeline(): Promise<void> {
         document.getElementById(`era-${era}`)?.scrollIntoView({ behavior: 'smooth' });
       }
     });
+
+    // Deep link support — scroll to era from URL hash
+    const fullHash = window.location.hash;
+    const eraMatch = fullHash.match(/#\/timeline\/(\w+)/);
+    if (eraMatch) {
+      setTimeout(() => {
+        document.getElementById(`era-${eraMatch[1]}`)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
   } catch {
     app.innerHTML = `<div class="container section" style="color: var(--text-secondary);">${t('common.error')}</div>`;
   }
@@ -601,63 +611,104 @@ function renderAbout(): void {
 
 // ── Markdown Helpers ──────────────────────────────────────
 function markdownToHtml(md: string): string {
-  let html = md;
-  // Horizontal rules
-  html = html.replace(/^---$/gm, '<hr class="crack-light">');
-  // Headers (add IDs for TOC linking)
-  let headingIndex = 0;
-  html = html.replace(/^## (.+)$/gm, () => {
-    const match = html.match(/^## (.+)$/m);
-    if (!match) return '';
-    const text = match[1];
-    html = html.replace(match[0], `<h2 id="section-${headingIndex}">${text}</h2>`);
-    headingIndex++;
-    return '';
-  });
-  // Re-process since we mutated — simpler approach
-  html = md;
-  html = html.replace(/^---$/gm, '<hr class="crack-light">');
-  headingIndex = 0;
-  html = html.replace(/^### (.+)$/gm, (_, text) => `<h3>${text}</h3>`);
-  html = html.replace(/^## (.+)$/gm, (_, text) => {
-    const id = `section-${headingIndex++}`;
-    return `<h2 id="${id}">${text}</h2>`;
-  });
-  // Bold
-  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  // Italic
-  html = html.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
-  // Tables
-  html = html.replace(/^\|(.+)\|$/gm, (line) => {
-    const cells = line.split('|').filter(c => c.trim());
-    if (cells.every(c => /^[\s-:]+$/.test(c))) return ''; // separator row
-    const tag = 'td';
-    return `<tr>${cells.map(c => `<${tag}>${c.trim()}</${tag}>`).join('')}</tr>`;
-  });
-  html = html.replace(/(<tr>[\s\S]*?<\/tr>)/g, (match) => {
-    if (!match.includes('<table>')) {
-      return `<table>${match}</table>`;
+  const lines = md.split('\n');
+  const output: string[] = [];
+  let h2Index = 0;
+  let inTable = false;
+  let isFirstRow = true;
+  let inList = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    // Horizontal rules
+    if (trimmed === '---') {
+      if (inList) { output.push('</ul>'); inList = false; }
+      if (inTable) { output.push('</table>'); inTable = false; }
+      output.push('<hr class="crack-light">');
+      continue;
     }
-    return match;
-  });
-  // Fix nested tables - wrap consecutive <tr> groups
-  html = html.replace(/(?:<table>)?(<tr>(?:[\s\S]*?)<\/tr>)+(?:<\/table>)?/g, (match) => {
-    const rows = match.replace(/<\/?table>/g, '');
-    return `<table>${rows}</table>`;
-  });
-  // Lists
-  html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
-  html = html.replace(/(<li>[\s\S]*?<\/li>)+/g, (match) => `<ul>${match}</ul>`);
-  // Blockquotes
-  html = html.replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>');
-  // Paragraphs (lines not already wrapped)
-  html = html.replace(/^(?!<[huptlb]|<\/)(.+)$/gm, (_, text) => {
-    if (text.trim() === '') return '';
-    return `<p>${text}</p>`;
-  });
-  // Clean up empty lines
-  html = html.replace(/\n{2,}/g, '\n');
-  return html;
+
+    // H2
+    if (trimmed.startsWith('## ') && !trimmed.startsWith('### ')) {
+      if (inList) { output.push('</ul>'); inList = false; }
+      if (inTable) { output.push('</table>'); inTable = false; }
+      const text = applyInline(trimmed.slice(3));
+      output.push(`<h2 id="section-${h2Index++}">${text}</h2>`);
+      continue;
+    }
+
+    // H3
+    if (trimmed.startsWith('### ')) {
+      if (inList) { output.push('</ul>'); inList = false; }
+      if (inTable) { output.push('</table>'); inTable = false; }
+      const text = applyInline(trimmed.slice(4));
+      output.push(`<h3>${text}</h3>`);
+      continue;
+    }
+
+    // Table row
+    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+      const cells = trimmed.slice(1, -1).split('|').map(c => c.trim());
+      // Separator row
+      if (cells.every(c => /^[-:]+$/.test(c))) continue;
+      if (!inTable) {
+        if (inList) { output.push('</ul>'); inList = false; }
+        output.push('<table>');
+        inTable = true;
+        isFirstRow = true;
+      }
+      const tag = isFirstRow ? 'th' : 'td';
+      output.push(`<tr>${cells.map(c => `<${tag}>${applyInline(c)}</${tag}>`).join('')}</tr>`);
+      // Check if next line is separator — then this was the header
+      const next = lines[i + 1]?.trim() || '';
+      if (next.startsWith('|') && next.split('|').filter(c => c.trim()).every(c => /^[-:]+$/.test(c))) {
+        isFirstRow = false;
+      } else {
+        isFirstRow = false;
+      }
+      continue;
+    } else if (inTable) {
+      output.push('</table>');
+      inTable = false;
+    }
+
+    // List item
+    if (trimmed.startsWith('- ')) {
+      if (!inList) { output.push('<ul>'); inList = true; }
+      output.push(`<li>${applyInline(trimmed.slice(2))}</li>`);
+      continue;
+    } else if (inList && trimmed !== '') {
+      output.push('</ul>');
+      inList = false;
+    }
+
+    // Blockquote
+    if (trimmed.startsWith('> ')) {
+      output.push(`<blockquote>${applyInline(trimmed.slice(2))}</blockquote>`);
+      continue;
+    }
+
+    // Empty line
+    if (trimmed === '') continue;
+
+    // Paragraph
+    output.push(`<p>${applyInline(trimmed)}</p>`);
+  }
+
+  if (inList) output.push('</ul>');
+  if (inTable) output.push('</table>');
+
+  return output.join('\n');
+}
+
+function applyInline(text: string): string {
+  // Bold
+  text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Italic (single *)
+  text = text.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+  return text;
 }
 
 function extractHeadings(md: string): string[] {
@@ -681,6 +732,7 @@ registerRoute('/', renderHome);
 registerRoute('/research', () => { renderResearch(); });
 registerRoute('/research/:id', () => { renderReport(); });
 registerRoute('/timeline', () => { renderTimeline(); });
+registerRoute('/timeline/:era', () => { renderTimeline(); });
 registerRoute('/ask', renderAsk);
 registerRoute('/tools', renderTools);
 registerRoute('/heritage', renderHeritage);

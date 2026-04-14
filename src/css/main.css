@@ -364,7 +364,9 @@ a:hover {
   overflow: hidden;
 }
 .lang-toggle button {
-  padding: 4px 12px;
+  padding: 8px 14px;
+  min-height: 44px;
+  min-width: 44px;
   background: transparent;
   color: var(--text-tertiary);
   border: none;
@@ -411,7 +413,8 @@ a:hover {
   color: var(--text-secondary);
   font-size: var(--text-base);
   font-weight: 500;
-  padding: var(--space-sm) 0;
+  padding: 12px 0;
+  min-height: 44px;
   text-decoration: none;
 }
 .mobile-nav a:hover, .mobile-nav a.active {
@@ -874,6 +877,35 @@ a:hover {
   /* Hero h1 sizing */
   h1 {
     font-size: var(--text-2xl);
+  }
+}
+
+/* Print layout for reports */
+@media print {
+  .site-nav, .mobile-nav, #search-modal, .reading-progress,
+  .toc-sidebar, footer, .btn-ember, .btn-ash, .lang-toggle {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .report-content h2, .report-content h3 {
+    color: black;
+  }
+  .report-content table {
+    border: 1px solid #ccc;
+  }
+  .report-content th, .report-content td {
+    border: 1px solid #ccc;
+  }
+  .grid-report-detail {
+    grid-template-columns: 1fr;
   }
 }
 
