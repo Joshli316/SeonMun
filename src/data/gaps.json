@@ -1,0 +1,302 @@
+[
+  {
+    "id": "g01",
+    "topic": { "en": "Underground church population estimates", "ko": "지하교회 인구 추정" },
+    "category": "contemporary",
+    "description": { "en": "Current estimates of underground Christians in North Korea range from 10,000 to 500,000 — a fifty-fold variance that reveals more about methodology than reality. No rigorous, peer-reviewed methodology exists for estimating religious populations in a closed totalitarian state. Most figures derive from defector extrapolation, satellite imagery analysis, or advocacy-driven estimates.", "ko": "현재 북한 지하 기독교인 수 추정치는 10,000명에서 500,000명까지 — 현실보다 방법론에 대해 더 많이 드러내는 50배의 차이. 폐쇄적 전체주의 국가에서 종교 인구를 추정하기 위한 엄밀한 동료 심사 방법론이 존재하지 않는다. 대부분의 수치는 탈북자 외삽, 위성 이미지 분석, 또는 옹호 중심 추정에서 나온다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 5,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g02",
+    "topic": { "en": "Underground church population estimation methodology", "ko": "지하교회 인구 추정 방법론" },
+    "category": "contemporary",
+    "description": { "en": "Development of a credible, transparent methodology for estimating the underground Christian population in North Korea. Could draw on methods from demography of hidden populations (capture-recapture, network scale-up) adapted for a state with zero survey access. Requires collaboration between statisticians, North Korea specialists, and defector researchers.", "ko": "북한 지하 기독교 인구를 추정하기 위한 신뢰할 수 있고 투명한 방법론 개발. 설문 접근이 전무한 국가에 적용된 숨겨진 인구의 인구학(포획-재포획, 네트워크 확대) 방법을 활용할 수 있다. 통계학자, 북한 전문가, 탈북자 연구자 간의 협력이 필요하다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 5,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g03",
+    "topic": { "en": "Juche-Christianity theological comparison", "ko": "주체사상-기독교 신학적 비교" },
+    "category": "theological",
+    "description": { "en": "Systematic theological comparison of Juche ideology and Christianity across parallel categories: soteriology (liberation through self-reliance vs. grace), eschatology (socialist paradise vs. kingdom of God), ecclesiology (party structure vs. church), hagiography (Kim family mythology vs. saints), ritual (self-criticism sessions vs. confession). Most existing comparisons are journalistic, not rigorously theological.", "ko": "주체 이념과 기독교의 체계적 신학 비교: 구원론(자력갱생을 통한 해방 대 은혜), 종말론(사회주의 낙원 대 하나님의 나라), 교회론(당 구조 대 교회), 성인전(김씨 일가 신화 대 성인), 의례(자아비판 대 고백). 대부분의 기존 비교는 저널리즘적이며 엄밀한 신학적 비교가 아니다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g04",
+    "topic": { "en": "Defector testimony verification methods", "ko": "탈북자 증언 검증 방법" },
+    "category": "defector-studies",
+    "description": { "en": "Defector testimonies are the primary source of information about Christianity inside North Korea, but verification is extremely difficult. Informants may exaggerate Christian affiliation for resettlement benefits, conflate rumor with personal experience, or carry trauma-related memory distortions. No standardized protocol exists for cross-referencing, triangulating, or assessing the reliability of defector accounts about religious practice.", "ko": "탈북자 증언은 북한 내부 기독교에 대한 주요 정보원이지만, 검증이 극히 어렵다. 정보 제공자들이 정착 혜택을 위해 기독교 소속을 과장하거나, 소문과 개인 경험을 혼동하거나, 트라우마 관련 기억 왜곡을 가질 수 있다. 종교 실천에 관한 탈북자 증언의 교차 참조, 삼각검증, 신뢰도 평가를 위한 표준화된 프로토콜이 존재하지 않는다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g05",
+    "topic": { "en": "\"Day After\" planning frameworks for religious re-engagement", "ko": "\"그 다음 날\" 종교 재참여 계획 프레임워크" },
+    "category": "missiological",
+    "description": { "en": "If the North Korean regime collapses or opens, how should the global church engage? No comprehensive, publicly available framework exists for religious re-engagement with a post-totalitarian population of 26 million conditioned against Christianity for 75+ years. Existing 'Day After' planning focuses on security, economics, and governance — not religious dimensions.", "ko": "북한 정권이 붕괴되거나 개방될 경우, 세계 교회는 어떻게 참여해야 하는가? 75년 이상 기독교에 대해 조건화된 2,600만 후기 전체주의 인구와의 종교 재참여를 위한 포괄적이고 공개적인 프레임워크가 존재하지 않는다. 기존 '그 다음 날' 계획은 안보, 경제, 거버넌스에 초점을 맞추며 — 종교적 차원은 다루지 않는다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g06",
+    "topic": { "en": "Korean-English scholarship bridging", "ko": "한국어-영어 학술 연구 가교" },
+    "category": "historical",
+    "description": { "en": "A vast body of Korean-language scholarship on North Korean Christianity exists — church history, defector studies, missiological strategy — that remains untranslated and inaccessible to English-speaking researchers. Conversely, Western academic frameworks for studying religion under totalitarianism are rarely applied to the Korean case. Systematic translation and cross-pollination could transform the field.", "ko": "북한 기독교에 관한 방대한 한국어 학술 연구 — 교회사, 탈북자 연구, 선교 전략 — 가 번역되지 않아 영어권 연구자들이 접근할 수 없다. 반대로, 전체주의 하의 종교 연구를 위한 서양 학술 프레임워크는 한국 사례에 거의 적용되지 않는다. 체계적 번역과 교차 수정이 이 분야를 변혁할 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g07",
+    "topic": { "en": "Prison camp religious practice documentation", "ko": "정치범수용소 종교 실천 기록" },
+    "category": "contemporary",
+    "description": { "en": "Scattered defector accounts suggest that some form of religious practice persists in North Korean prison camps (kwanliso), where conditions are the most extreme. Documentation is fragmentary: a few testimonies mention prayer, whispered hymns, or shared faith among prisoners. Systematic collection and analysis of these accounts could reveal the most extreme form of faith under persecution in the modern world.", "ko": "산발적인 탈북자 증언에 따르면, 조건이 가장 극한인 북한 정치범수용소(관리소)에서 어떤 형태의 종교 실천이 지속되고 있다. 기록은 단편적이다: 몇몇 증언이 기도, 속삭이는 찬송, 수감자 간 공유된 신앙을 언급한다. 이러한 증언의 체계적 수집과 분석은 현대 세계에서 박해 하의 가장 극한적 신앙 형태를 밝힐 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 5,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g08",
+    "topic": { "en": "Show church authenticity assessment", "ko": "전시용 교회 진정성 평가" },
+    "category": "contemporary",
+    "description": { "en": "North Korea operates a small number of 'show churches' in Pyongyang (Bongsu Church, Changchung Cathedral, Chilgol Church) for foreign visitors. Are there genuine believers among the attendees? Is any authentic worship occurring? Assessment requires analyzing visitor reports, defector accounts, architectural analysis, and comparison with similar phenomena in other totalitarian states (Soviet Union, China).", "ko": "북한은 외국 방문객을 위해 평양에 소수의 '전시용 교회'(봉수교회, 장충성당, 칠골교회)를 운영한다. 참석자들 중에 진정한 신자가 있는가? 진정한 예배가 이루어지고 있는가? 평가를 위해서는 방문자 보고, 탈북자 증언, 건축 분석, 다른 전체주의 국가(소련, 중국)의 유사 현상과의 비교 분석이 필요하다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g09",
+    "topic": { "en": "Pre-division church mapping", "ko": "분단 이전 교회 지도 작성" },
+    "category": "historical",
+    "description": { "en": "Before the 1945 division, northern Korea — especially the Pyongyang region — had a dense network of churches, schools, hospitals, and seminaries. A comprehensive geographic and institutional map of this pre-division Christian infrastructure has never been assembled. Sources exist (missionary reports, denominational records, Japanese colonial surveys) but have not been synthesized into a single database.", "ko": "1945년 분단 이전, 북부 한국 — 특히 평양 지역 — 에는 교회, 학교, 병원, 신학교의 조밀한 네트워크가 있었다. 이 분단 이전 기독교 인프라의 포괄적 지리적, 제도적 지도는 한 번도 조립된 적이 없다. 자료(선교사 보고서, 교단 기록, 일제 식민 조사)가 존재하지만 단일 데이터베이스로 합성되지 않았다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g10",
+    "topic": { "en": "Generational faith transmission under suppression", "ko": "억압 하의 세대 간 신앙 전달" },
+    "category": "contemporary",
+    "description": { "en": "How has Christian faith been transmitted across generations in North Korea without institutional structures? Some defectors report grandparents whispering prayers or passing down fragments of Christian knowledge. The mechanisms — family oral tradition, memorized Scripture, hidden artifacts — are poorly documented. Comparison with faith transmission under Soviet and Chinese persecution could provide analytical frameworks.", "ko": "제도적 구조 없이 북한에서 기독교 신앙이 어떻게 세대를 넘어 전달되었는가? 일부 탈북자들은 조부모가 기도를 속삭이거나 기독교 지식의 파편을 전해주었다고 보고한다. 메커니즘 — 가족 구전 전통, 암기된 성경, 숨겨진 유물 — 은 잘 기록되지 않았다. 소련과 중국 박해 하의 신앙 전달과의 비교가 분석 프레임워크를 제공할 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 5,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g11",
+    "topic": { "en": "Radio ministry effectiveness measurement", "ko": "라디오 선교 효과 측정" },
+    "category": "missiological",
+    "description": { "en": "Multiple organizations broadcast Korean-language Christian programming into North Korea via shortwave and medium-wave radio. Measuring effectiveness is nearly impossible: there is no way to survey listeners, track conversions, or even confirm reception. Defector debriefings occasionally mention radio exposure. A systematic meta-analysis of all available defector data on radio reception could provide the first evidence-based assessment.", "ko": "다수의 단체가 단파 및 중파 라디오를 통해 한국어 기독교 프로그램을 북한에 방송한다. 효과 측정은 거의 불가능하다: 청취자를 조사하거나, 개종을 추적하거나, 수신을 확인할 방법조차 없다. 탈북자 보고에서 가끔 라디오 노출이 언급된다. 라디오 수신에 관한 모든 이용 가능한 탈북자 데이터의 체계적 메타 분석이 최초의 증거 기반 평가를 제공할 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g12",
+    "topic": { "en": "1945-1950 Christian purge documentation", "ko": "1945-1950년 기독교 숙청 기록" },
+    "category": "historical",
+    "description": { "en": "Between Korea's liberation from Japan (1945) and the Korean War (1950), the Soviet-backed North Korean regime systematically dismantled the Christian infrastructure in the north. Churches were closed, leaders were arrested or killed, and hundreds of thousands of Christians fled south. The documentation of this five-year purge is scattered across South Korean church archives, missionary memoirs, and Soviet-era records.", "ko": "일본으로부터의 해방(1945)과 한국전쟁(1950) 사이, 소련이 지원한 북한 정권은 북부의 기독교 인프라를 체계적으로 해체했다. 교회가 폐쇄되고, 지도자들이 체포 또는 살해되었으며, 수십만 명의 기독교인이 남쪽으로 피난했다. 이 5년간의 숙청 기록은 남한 교회 아카이브, 선교사 회고록, 소련 시대 기록에 흩어져 있다. (AI 번역 — 검토 대기)" },
+    "significance": 5,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g13",
+    "topic": { "en": "Comparative totalitarian religion suppression", "ko": "비교 전체주의 종교 억압 연구" },
+    "category": "comparative",
+    "description": { "en": "Systematic comparison of North Korea's suppression of Christianity with parallel campaigns in the Soviet Union, Maoist China, Albania, and Cambodia. How does the North Korean approach differ? What can survival patterns in other contexts predict about Christianity's persistence in North Korea? Academic literature on religion under other totalitarian regimes is extensive but rarely applied to the DPRK case.", "ko": "북한의 기독교 억압과 소련, 마오 시대 중국, 알바니아, 캄보디아의 유사 캠페인의 체계적 비교. 북한의 접근법은 어떻게 다른가? 다른 맥락의 생존 패턴이 북한에서의 기독교 지속에 대해 무엇을 예측할 수 있는가? 다른 전체주의 체제 하의 종교에 대한 학술 문헌은 광범위하지만 북한 사례에는 거의 적용되지 않는다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g14",
+    "topic": { "en": "Juche as quasi-religion: structural analysis", "ko": "유사 종교로서의 주체: 구조 분석" },
+    "category": "theological",
+    "description": { "en": "Juche functions as a quasi-religion with doctrines, rituals, sacred sites, hagiography, and an eschatology. A rigorous religious-studies analysis — using frameworks from Ninian Smart's dimensions of religion, Clifford Geertz's symbolic systems, or Emile Durkheim's social functions of religion — would provide analytical tools for understanding both Juche and its interaction with Christianity.", "ko": "주체사상은 교리, 의례, 성지, 성인전, 종말론을 갖춘 유사 종교로 기능한다. 니니안 스마트의 종교 차원, 클리포드 기어츠의 상징 체계, 에밀 뒤르켐의 종교의 사회적 기능과 같은 프레임워크를 사용한 엄밀한 종교학적 분석이 주체와 기독교의 상호작용을 이해하기 위한 분석 도구를 제공할 것이다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g15",
+    "topic": { "en": "Defector spiritual journey longitudinal study", "ko": "탈북자 영적 여정 종단 연구" },
+    "category": "defector-studies",
+    "description": { "en": "No longitudinal study tracks the spiritual development of North Korean defectors over time — from initial encounter with Christianity through conversion, church integration, and long-term faith retention. Cross-sectional snapshots miss the trajectory. A 5-10 year longitudinal cohort study of defectors who encountered Christianity could reveal patterns of conversion, deconversion, and faith maturation.", "ko": "북한 탈북자의 영적 발전을 시간에 따라 추적하는 종단 연구가 없다 — 기독교와의 최초 접촉부터 개종, 교회 통합, 장기 신앙 유지까지. 단면적 스냅샷은 궤적을 놓친다. 기독교를 접한 탈북자의 5-10년 종단 코호트 연구가 개종, 이탈, 신앙 성숙의 패턴을 밝힐 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g16",
+    "topic": { "en": "Pyongyang Revival comparative pneumatology", "ko": "평양 부흥 비교 성령론" },
+    "category": "theological",
+    "description": { "en": "The 1907 Pyongyang Revival occurred simultaneously with the Welsh Revival (1904-05) and the Azusa Street Revival (1906). A rigorous theological comparison of these three events — their pneumatology, their social context, their lasting institutional effects — has never been fully undertaken. Such a study could illuminate why the Korean revival produced uniquely durable church structures.", "ko": "1907년 평양 부흥은 웨일스 부흥(1904-05)과 아주사 거리 부흥(1906)과 동시대에 일어났다. 이 세 사건의 엄밀한 신학적 비교 — 성령론, 사회적 맥락, 지속적 제도적 효과 — 는 아직 완전히 수행되지 않았다. 이러한 연구는 한국 부흥이 왜 독특하게 지속 가능한 교회 구조를 낳았는지를 조명할 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 3,
+    "difficulty": 2,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g17",
+    "topic": { "en": "North Korean regime's internal religious intelligence", "ko": "북한 정권의 내부 종교 정보" },
+    "category": "contemporary",
+    "description": { "en": "How does the North Korean security apparatus monitor and suppress religious activity? What training do Bowibu (State Security) agents receive about identifying Christians? Defectors who served in security roles occasionally provide fragments, but no systematic analysis of the regime's anti-religion intelligence apparatus exists.", "ko": "북한 보안 기관은 어떻게 종교 활동을 감시하고 억압하는가? 보위부 요원들은 기독교인 식별에 대해 어떤 훈련을 받는가? 보안 역할을 수행한 탈북자들이 가끔 파편적 정보를 제공하지만, 정권의 반종교 정보 기관에 대한 체계적 분석은 존재하지 않는다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 5,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g18",
+    "topic": { "en": "Chinese-Korean border church networks", "ko": "중국-한국 국경 교회 네트워크" },
+    "category": "missiological",
+    "description": { "en": "Korean-Chinese (Joseonjok) churches along the China-DPRK border play a critical but poorly documented role in ministry to North Koreans. Their history, theology, demographics, and operational challenges need academic study. Sensitivity is required — detailed operational mapping could endanger ongoing work.", "ko": "중국-북한 국경을 따라 있는 조선족 교회들은 북한인 사역에서 중요하지만 잘 기록되지 않은 역할을 한다. 그들의 역사, 신학, 인구 구성, 운영상의 도전이 학술적 연구를 필요로 한다. 민감성이 요구된다 — 상세한 운영 지도는 진행 중인 사역을 위험에 빠뜨릴 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 5,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g19",
+    "topic": { "en": "Post-reunification church models from Germany", "ko": "독일의 재통일 후 교회 모델" },
+    "category": "comparative",
+    "description": { "en": "After German reunification in 1990, Western churches attempted to re-engage with East German populations secularized under 40 years of communism. The results were mixed at best. What lessons does the German church experience hold for potential Korean reunification? North Korea's situation is far more extreme (75+ years, deeper totalitarianism), but the German case remains the closest precedent.", "ko": "1990년 독일 통일 후, 서독 교회들은 40년간의 공산주의 하에서 세속화된 동독 인구와의 재참여를 시도했다. 결과는 기껏해야 혼재된 것이었다. 독일 교회 경험이 잠재적 한국 통일에 어떤 교훈을 주는가? 북한의 상황은 훨씬 더 극단적이지만(75년 이상, 더 깊은 전체주의), 독일 사례는 가장 가까운 선례로 남아 있다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 2,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g20",
+    "topic": { "en": "Defector trauma and conversion psychology", "ko": "탈북자 트라우마와 개종 심리" },
+    "category": "defector-studies",
+    "description": { "en": "The intersection of trauma and religious conversion in North Korean defectors is understudied. Do trauma survivors convert for therapeutic reasons (community, meaning-making, emotional support) or for theological reasons? Is faith a coping mechanism or a genuine transformation? Clinical psychologists, theologians, and Korean studies scholars need to collaborate on this question.", "ko": "북한 탈북자들에게서 트라우마와 종교적 개종의 교차점은 연구가 부족하다. 트라우마 생존자들은 치료적 이유(공동체, 의미 부여, 정서적 지지)로 개종하는가, 신학적 이유로 개종하는가? 신앙은 대처 메커니즘인가 진정한 변혁인가? 임상 심리학자, 신학자, 한국학 학자들이 이 질문에 대해 협력해야 한다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g21",
+    "topic": { "en": "Songbun system impact on religious practice", "ko": "성분 제도가 종교 실천에 미치는 영향" },
+    "category": "contemporary",
+    "description": { "en": "North Korea's songbun (성분) social classification system categorizes citizens based on perceived political loyalty, with Christian family background placing people in the 'hostile' class. How has this three-generation punishment system affected the descendants of pre-division Christians? Are those with Christian songbun more or less likely to practice faith covertly?", "ko": "북한의 성분 사회 분류 체계는 인지된 정치적 충성도에 따라 시민을 분류하며, 기독교 가정 배경은 '적대' 계층에 배치된다. 이 3세대 연좌제가 분단 이전 기독교인의 후손에게 어떤 영향을 미쳤는가? 기독교 성분을 가진 사람들이 비밀리에 신앙을 실천할 가능성이 더 높은가 낮은가? (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g22",
+    "topic": { "en": "Women's roles in North Korean underground faith", "ko": "북한 지하 신앙에서 여성의 역할" },
+    "category": "contemporary",
+    "description": { "en": "Scattered evidence suggests that women play a disproportionately central role in maintaining underground Christian practice in North Korea, as they have in other persecuted contexts (early church, Soviet Union, China). Women's greater mobility in the informal economy and domestic sphere may provide cover for clandestine religious activity. This gendered dimension is almost completely unresearched.", "ko": "산발적 증거에 따르면, 여성이 다른 박해 상황(초대교회, 소련, 중국)에서와 마찬가지로 북한 지하 기독교 유지에서 불균형적으로 중심적 역할을 한다. 비공식 경제와 가정 영역에서의 여성의 더 큰 이동성이 비밀 종교 활동을 위한 위장을 제공할 수 있다. 이 젠더적 차원은 거의 완전히 연구되지 않았다. (AI 번역 — 검토 대기)" },
+    "significance": 3,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g23",
+    "topic": { "en": "Digital information penetration and faith exposure", "ko": "디지털 정보 침투와 신앙 노출" },
+    "category": "missiological",
+    "description": { "en": "USB drives, SD cards, and smuggled devices have become vectors for non-regime information entering North Korea. Some of this content includes Christian material. The scale, content types, reception patterns, and spiritual impact of digital Christian content smuggling are unknown. How does encountering Christianity on a USB drive differ from encountering it through a person?", "ko": "USB 드라이브, SD 카드, 밀반입 기기가 북한에 비정권 정보가 유입되는 경로가 되었다. 이 콘텐츠의 일부에는 기독교 자료가 포함된다. 디지털 기독교 콘텐츠 밀반입의 규모, 콘텐츠 유형, 수용 패턴, 영적 영향은 알려지지 않았다. USB 드라이브를 통해 기독교를 접하는 것은 사람을 통해 접하는 것과 어떻게 다른가? (AI 번역 — 검토 대기)" },
+    "significance": 3,
+    "difficulty": 4,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g24",
+    "topic": { "en": "Missionary sending patterns from Korean diaspora", "ko": "한국 디아스포라의 선교사 파송 패턴" },
+    "category": "missiological",
+    "description": { "en": "South Korea is one of the world's largest missionary-sending nations, yet relatively little academic research examines how Korean diaspora churches (in the US, Canada, Australia, China) specifically contribute to North Korea-focused mission. What percentage of Korean diaspora giving targets NK ministry? How are diaspora churches uniquely positioned or limited?", "ko": "한국은 세계 최대 선교사 파송국 중 하나이지만, 한국 디아스포라 교회(미국, 캐나다, 호주, 중국)가 북한 중심 선교에 어떻게 기여하는지를 조사하는 학술 연구는 비교적 적다. 한국 디아스포라 헌금의 몇 퍼센트가 북한 사역을 대상으로 하는가? 디아스포라 교회들은 어떻게 독특하게 위치하거나 제한되는가? (AI 번역 — 검토 대기)" },
+    "significance": 3,
+    "difficulty": 2,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g25",
+    "topic": { "en": "Theological education curriculum for North Korea readiness", "ko": "북한 대비 신학 교육 커리큘럼" },
+    "category": "missiological",
+    "description": { "en": "If North Korea opens, thousands of church planters and pastors will be needed. What curriculum should be developed now for rapid deployment? Existing theological education assumes literate, voluntarily enrolled students with basic biblical literacy. North Korean adults will have none of these prerequisites. No 'North Korea-ready' theological curriculum exists.", "ko": "북한이 개방되면 수천 명의 교회 개척자와 목사가 필요할 것이다. 신속한 배치를 위해 지금 어떤 커리큘럼을 개발해야 하는가? 기존 신학 교육은 문해력 있고, 자발적으로 등록하고, 기본적인 성경 지식을 가진 학생을 전제한다. 북한 성인들은 이러한 전제 조건을 갖추지 못할 것이다. '북한 대비' 신학 커리큘럼이 존재하지 않는다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g26",
+    "topic": { "en": "Famine theology: the 1990s Arduous March and faith", "ko": "기근 신학: 1990년대 고난의 행군과 신앙" },
+    "category": "theological",
+    "description": { "en": "The North Korean famine of the 1990s (the 'Arduous March') killed an estimated 600,000-2.5 million people and shattered faith in the Juche system for many survivors. How did this famine function as a theological rupture? Did it create openness to alternative belief systems? Defector accounts from this era are the richest source but remain poorly analyzed through a theological lens.", "ko": "1990년대 북한 기근('고난의 행군')은 약 60만-250만 명을 죽이고 많은 생존자들의 주체 체제에 대한 믿음을 무너뜨렸다. 이 기근은 어떻게 신학적 단절로 기능했는가? 대안적 신념 체계에 대한 개방성을 만들었는가? 이 시대의 탈북자 증언이 가장 풍부한 자료이지만 신학적 렌즈를 통한 분석은 부족하다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g27",
+    "topic": { "en": "Oral Scripture transmission accuracy", "ko": "구전 성경 전달 정확도" },
+    "category": "defector-studies",
+    "description": { "en": "Some underground Christians in North Korea reportedly transmit Scripture orally — memorized passages passed from person to person without written texts. How accurately does oral transmission preserve biblical content across generations in a context where written Bibles are contraband? Comparison with oral transmission studies in other contexts (African churches, early church) could provide methodological frameworks.", "ko": "북한의 일부 지하 기독교인들은 성경을 구전으로 전달한다고 전해진다 — 문서 없이 사람에서 사람으로 전달되는 암기된 구절. 성경이 금제품인 상황에서 구전 전달이 세대를 넘어 성경 내용을 얼마나 정확하게 보존하는가? 다른 맥락(아프리카 교회, 초대교회)의 구전 전달 연구와의 비교가 방법론적 프레임워크를 제공할 수 있다. (AI 번역 — 검토 대기)" },
+    "significance": 3,
+    "difficulty": 5,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g28",
+    "topic": { "en": "South Korean church attitudes toward reunification ministry", "ko": "통일 사역에 대한 한국 교회의 태도" },
+    "category": "missiological",
+    "description": { "en": "Younger South Korean Christians show declining interest in reunification and North Korea ministry compared to older generations. Survey data is limited and mostly in Korean. Understanding the generational shift in South Korean church engagement with North Korea is critical for long-term ministry planning.", "ko": "젊은 한국 기독교인들은 이전 세대에 비해 통일과 북한 사역에 대한 관심이 줄어들고 있다. 설문 데이터는 제한적이고 대부분 한국어로만 존재한다. 북한과의 남한 교회 참여에서의 세대 변화를 이해하는 것은 장기 사역 계획에 중요하다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 2,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g29",
+    "topic": { "en": "North Korean biblical hermeneutics", "ko": "북한적 성경 해석학" },
+    "category": "theological",
+    "description": { "en": "How do North Korean converts interpret the Bible? Do they bring distinctively North Korean hermeneutical lenses shaped by Juche ideology, collectivist culture, and the experience of totalitarianism? Preliminary defector accounts suggest unique readings of Exodus (liberation narrative), Daniel (survival under hostile empires), and Revelation (regime collapse). A North Korean contextual theology has yet to be articulated.", "ko": "북한 출신 개종자들은 성경을 어떻게 해석하는가? 주체 이념, 집단주의 문화, 전체주의 경험에 의해 형성된 독특한 북한적 해석학적 렌즈를 가져오는가? 예비적 탈북자 증언은 출애굽기(해방 서사), 다니엘서(적대 제국 하의 생존), 요한계시록(정권 붕괴)의 독특한 해석을 시사한다. 북한적 상황 신학은 아직 체계화되지 않았다. (AI 번역 — 검토 대기)" },
+    "significance": 3,
+    "difficulty": 3,
+    "status": "open",
+    "claimedBy": null
+  },
+  {
+    "id": "g30",
+    "topic": { "en": "Humanitarian aid and proselytization ethics", "ko": "인도주의적 원조와 전도 윤리" },
+    "category": "missiological",
+    "description": { "en": "The tension between humanitarian aid and evangelism in North Korea-related ministry is a persistent ethical question. Some organizations provide aid with no religious strings; others use aid as an entry point for gospel witness. International humanitarian law, missiological ethics, and the practical reality that aid workers who proselytize may be banned — or worse, endanger local populations — create a complex ethical landscape that lacks a consensus framework.", "ko": "북한 관련 사역에서 인도주의적 원조와 전도 사이의 긴장은 지속적인 윤리적 질문이다. 일부 단체는 종교적 조건 없이 원조를 제공하고, 다른 단체는 원조를 복음 증거의 진입점으로 사용한다. 국제 인도주의법, 선교 윤리, 그리고 전도하는 원조 활동가가 추방되거나 — 더 나쁘게는 현지 주민을 위험에 빠뜨릴 수 있다는 현실적 현실이 합의된 프레임워크가 부족한 복잡한 윤리적 지형을 만든다. (AI 번역 — 검토 대기)" },
+    "significance": 4,
+    "difficulty": 2,
+    "status": "open",
+    "claimedBy": null
+  }
+]

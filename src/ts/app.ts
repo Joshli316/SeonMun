@@ -1,7 +1,16 @@
-import { registerRoute, initApp } from './main';
+import { registerRoute, initApp, getRouteParam } from './main';
 import { t, getLang } from './i18n';
 import { initSearch } from './search';
 import { loadReport, loadTimeline } from './data-loader';
+import { renderMap } from './pages/map';
+import { renderHeritageLanding, renderJerusalem, renderCounterfeit, renderRevival, renderShowChurches } from './pages/heritage';
+import { renderTestimonies } from './pages/testimonies';
+import { renderDayAfter } from './pages/dayafter';
+import { renderTrainingList, renderTrainingModule } from './pages/training';
+import { renderPersonaGallery, renderPersonaChat } from './pages/personas';
+import { renderEstimator } from './pages/estimator';
+import { renderGaps } from './pages/gaps';
+import { renderBridge } from './pages/bridge';
 
 // ── Home Page ──────────────────────────────────────────────
 function renderHome(): void {
@@ -530,18 +539,16 @@ function renderTools(): void {
   const lang = getLang();
 
   const tools = [
-    {
-      id: 'ask',
-      en: { title: 'Ask the Archive', desc: 'AI-powered Q&A grounded in 12 research reports. Ask anything about North Korean Christianity.' },
-      ko: { title: '아카이브에 질문하기', desc: '12편의 연구 보고서를 기반으로 한 AI Q&A. 북한 기독교에 대해 무엇이든 물어보세요.' },
-      link: '#/ask',
-    },
-    {
-      id: 'timeline',
-      en: { title: 'Interactive Timeline', desc: '242 years of Christianity in North Korea — from Catholic beginnings to the underground church.' },
-      ko: { title: '대화형 타임라인', desc: '북한 기독교 242년 — 천주교 시작부터 지하교회까지.' },
-      link: '#/timeline',
-    },
+    { en: { title: 'Ask the Archive', desc: 'AI-powered Q&A grounded in 12 research reports.' }, ko: { title: '아카이브에 질문하기', desc: '12편의 연구 보고서를 기반으로 한 AI Q&A.' }, link: '#/ask' },
+    { en: { title: 'Interactive Timeline', desc: '242 years of Christianity in North Korea.' }, ko: { title: '대화형 타임라인', desc: '북한 기독교 242년.' }, link: '#/timeline' },
+    { en: { title: 'Spread & Destruction Map', desc: 'Watch Christianity rise and disappear across the Korean peninsula.' }, ko: { title: '확산과 파괴 지도', desc: '한반도에서 기독교가 세워지고 사라지는 것을 지켜보세요.' }, link: '#/map' },
+    { en: { title: 'Defector Testimony Archive', desc: 'Anonymized accounts from published defector testimonies.' }, ko: { title: '탈북민 증언 아카이브', desc: '출판된 탈북민 증언의 익명화된 기록.' }, link: '#/testimonies' },
+    { en: { title: '"Day After" Scenario Planner', desc: 'Three scenarios for NK opening. Checklists and preparedness scoring.' }, ko: { title: '"그날 이후" 시나리오 플래너', desc: 'NK 개방을 위한 세 가지 시나리오. 체크리스트와 대비 점수.' }, link: '#/dayafter' },
+    { en: { title: 'Training Modules', desc: '5 modules for defector ministry and NK missions.' }, ko: { title: '훈련 모듈', desc: '탈북민 사역과 북한 선교를 위한 5개 모듈.' }, link: '#/training' },
+    { en: { title: 'Historical Conversations', desc: 'Chat with 6 key figures from Korean Christian history.' }, ko: { title: '역사적 대화', desc: '한국 기독교 역사의 핵심 인물 6인과 대화.' }, link: '#/personas' },
+    { en: { title: 'Underground Church Estimator', desc: 'Explore estimates, adjust assumptions, compare methodologies.' }, ko: { title: '지하교회 추정기', desc: '추정치 탐색, 가정 조정, 방법론 비교.' }, link: '#/estimator' },
+    { en: { title: 'Research Gap Tracker', desc: 'Track unanswered questions in NK Christianity scholarship.' }, ko: { title: '연구 공백 추적기', desc: 'NK 기독교 학술 연구의 미해결 질문 추적.' }, link: '#/gaps' },
+    { en: { title: 'Korean-English Scholarship Bridge', desc: 'Korean and English sources side by side.' }, ko: { title: '한영 학술 다리', desc: '한국어와 영어 출처를 나란히.' }, link: '#/bridge' },
   ];
 
   app.innerHTML = `
@@ -566,32 +573,6 @@ function renderTools(): void {
 }
 
 // ── Heritage Page ──────────────────────────────────────────
-function renderHeritage(): void {
-  const app = document.getElementById('app')!;
-  const lang = getLang();
-
-  app.innerHTML = `
-    <section class="section">
-      <div class="container">
-        <h1 style="font-size: var(--text-3xl); margin-bottom: var(--space-sm);">${lang === 'ko' ? '유산 체험' : 'Heritage Experience'}</h1>
-        <p style="color: var(--text-secondary); font-size: var(--text-lg); margin-bottom: var(--space-xl);">${lang === 'ko' ? '평양의 잃어버린 교회들부터 주체사상의 기독교 모방까지 — 북한의 기독교 유산을 탐색하세요.' : 'From Pyongyang\'s lost churches to Juche\'s imitation of Christianity — explore North Korea\'s Christian heritage.'}</p>
-        <div class="grid-2col">
-          <div class="coal-panel ember-glow" style="padding: var(--space-xl);">
-            <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent-ember); margin-bottom: var(--space-sm); letter-spacing: 1px;">JERUSALEM OF THE EAST</div>
-            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-md);">${lang === 'ko' ? '동방의 예루살렘' : 'Jerusalem of the East'}</h3>
-            <p style="color: var(--text-secondary); font-size: var(--text-sm); line-height: 1.55;">${lang === 'ko' ? '평양에 한때 100개 이상의 교회가 있었습니다. 1907년 부흥은 세계 기독교 역사상 가장 중요한 부흥 중 하나였습니다. 그 도시에 무슨 일이 일어났는지 알아보세요.' : 'Pyongyang once had over 100 churches. The 1907 Revival was one of the most significant in world Christianity. Discover what happened to that city.'}</p>
-          </div>
-          <div class="coal-panel ember-glow" style="padding: var(--space-xl);">
-            <div style="font-family: var(--font-mono); font-size: var(--text-xs); color: var(--accent-ember); margin-bottom: var(--space-sm); letter-spacing: 1px;">THE COUNTERFEIT</div>
-            <h3 style="font-size: var(--text-xl); margin-bottom: var(--space-md);">${lang === 'ko' ? '모조품: 주체 대 기독교' : 'The Counterfeit: Juche vs. Christianity'}</h3>
-            <p style="color: var(--text-secondary); font-size: var(--text-sm); line-height: 1.55;">${lang === 'ko' ? '주체사상은 기독교를 억압하기만 한 것이 아니라 대체했습니다. 삼위일체 → 3대 김씨, 십계명 → 10대 원칙, 영생 → 영원한 주석. 대응 관계를 살펴보세요.' : 'Juche didn\'t just suppress Christianity — it replaced it. Trinity → Three Kims, Ten Commandments → Ten Principles, Eternal Life → Eternal President. Explore the parallels.'}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  `;
-}
-
 // ── About Page ──────────────────────────────────────────
 function renderAbout(): void {
   const app = document.getElementById('app')!;
@@ -735,8 +716,26 @@ registerRoute('/timeline', () => { renderTimeline(); });
 registerRoute('/timeline/:era', () => { renderTimeline(); });
 registerRoute('/ask', renderAsk);
 registerRoute('/tools', renderTools);
-registerRoute('/heritage', renderHeritage);
 registerRoute('/about', renderAbout);
+
+// Phase 2 routes
+registerRoute('/map', () => { renderMap(document.getElementById('app')!); });
+registerRoute('/heritage', () => { renderHeritageLanding(document.getElementById('app')!); });
+registerRoute('/heritage/jerusalem', () => { renderJerusalem(document.getElementById('app')!); });
+registerRoute('/heritage/counterfeit', () => { renderCounterfeit(document.getElementById('app')!); });
+registerRoute('/heritage/revival', () => { renderRevival(document.getElementById('app')!); });
+registerRoute('/heritage/showchurches', () => { renderShowChurches(document.getElementById('app')!); });
+registerRoute('/testimonies', () => { renderTestimonies(document.getElementById('app')!); });
+registerRoute('/dayafter', () => { renderDayAfter(document.getElementById('app')!); });
+registerRoute('/training', () => { renderTrainingList(document.getElementById('app')!); });
+registerRoute('/training/:id', () => { const id = getRouteParam('id'); if (id) renderTrainingModule(document.getElementById('app')!, id); });
+
+// Phase 3 routes
+registerRoute('/personas', () => { renderPersonaGallery(document.getElementById('app')!); });
+registerRoute('/personas/:id', () => { const id = getRouteParam('id'); if (id) renderPersonaChat(document.getElementById('app')!, id); });
+registerRoute('/estimator', () => { renderEstimator(document.getElementById('app')!); });
+registerRoute('/gaps', () => { renderGaps(document.getElementById('app')!); });
+registerRoute('/bridge', () => { renderBridge(document.getElementById('app')!); });
 
 // ── Boot ──────────────────────────────────────────
 initApp();
