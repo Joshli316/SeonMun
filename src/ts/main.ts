@@ -1,4 +1,4 @@
-import { setLang, getLang, t } from './i18n';
+import { setLang, getLang, t, SISTER_PROJECTS } from './i18n';
 
 type Route = {
   path: string;
@@ -82,6 +82,90 @@ export function setCleanup(fn: () => void): void {
   currentCleanup = fn;
 }
 
+function renderSisterMenu(): void {
+  const panel = document.getElementById('sister-menu-panel');
+  if (panel) {
+    const main = SISTER_PROJECTS.find(p => p.isMain)!;
+    const others = SISTER_PROJECTS.filter(p => !p.isMain && p.key !== 'seonmun');
+    panel.innerHTML = `
+      <a class="sister-menu__item sister-menu__item--main" href="${main.url}" target="_blank" rel="noopener" role="menuitem">
+        <span class="sister-menu__item-emoji" aria-hidden="true">${main.emoji}</span>
+        <span class="sister-menu__item-text">
+          <span class="sister-menu__item-tag">${main.tag} XuanYan</span>
+          <span class="sister-menu__item-main-label">${t('sisters.main_label')}</span>
+        </span>
+      </a>
+      ${others.map(p => `
+        <a class="sister-menu__item" href="${p.url}" target="_blank" rel="noopener" role="menuitem">
+          <span class="sister-menu__item-emoji" aria-hidden="true">${p.emoji}</span>
+          <span class="sister-menu__item-text">
+            <span class="sister-menu__item-tag">${p.tag}</span>
+            <span class="sister-menu__item-region">${t(p.regionKey)}</span>
+          </span>
+        </a>
+      `).join('')}
+    `;
+  }
+
+  const family = document.getElementById('footer-family');
+  if (family) {
+    const main = SISTER_PROJECTS.find(p => p.isMain)!;
+    const others = SISTER_PROJECTS.filter(p => !p.isMain && p.key !== 'seonmun');
+    family.innerHTML = `
+      <div class="footer-family__title">${t('footer.family_title')}</div>
+      <div class="footer-family__row">
+        <a class="footer-family__main" href="${main.url}" target="_blank" rel="noopener">
+          <span aria-hidden="true">${main.emoji}</span>
+          <span class="footer-family__main-tag">${main.tag}</span>
+          <span>XuanYan</span>
+          <span class="footer-family__main-badge">${t('footer.family_main')}</span>
+        </a>
+        <span class="footer-family__current" aria-current="page">
+          <span aria-hidden="true">🇰🇵</span>
+          <span>선문 SeonMun</span>
+        </span>
+        ${others.map(p => `
+          <a class="footer-family__sister" href="${p.url}" target="_blank" rel="noopener">
+            <span aria-hidden="true">${p.emoji}</span>
+            <span>${p.tag}</span>
+          </a>
+        `).join('')}
+      </div>
+    `;
+  }
+}
+
+function initSisterMenu(): void {
+  const wrap = document.getElementById('sister-menu');
+  const btn = document.getElementById('sister-menu-btn');
+  if (!wrap || !btn) return;
+
+  renderSisterMenu();
+
+  const close = () => {
+    wrap.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+  };
+  const open = () => {
+    wrap.classList.add('is-open');
+    btn.setAttribute('aria-expanded', 'true');
+  };
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (wrap.classList.contains('is-open')) close();
+    else open();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!wrap.contains(e.target as Node)) close();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') close();
+  });
+}
+
 function initNav(): void {
   const langBtns = document.querySelectorAll('.lang-toggle button');
   langBtns.forEach(btn => {
@@ -91,6 +175,8 @@ function initNav(): void {
       updateLangButtons();
     });
   });
+
+  initSisterMenu();
 
   const mobileBtn = document.querySelector('.mobile-menu-btn');
   const mobileNav = document.querySelector('.mobile-nav');
@@ -159,6 +245,7 @@ function updateLangButtons(): void {
 
 window.addEventListener('langchange', () => {
   updateLangButtons();
+  renderSisterMenu();
   handleRoute();
 });
 

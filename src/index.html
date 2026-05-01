@@ -36,6 +36,10 @@
       </ul>
 
       <div class="nav-right">
+        <div class="sister-menu" id="sister-menu">
+          <button class="sister-menu__btn" id="sister-menu-btn" aria-haspopup="true" aria-expanded="false" aria-controls="sister-menu-panel" data-i18n="nav.sisters_link">← XuanYan family</button>
+          <div class="sister-menu__panel" id="sister-menu-panel" role="menu" aria-labelledby="sister-menu-btn"></div>
+        </div>
         <div class="lang-toggle" role="group" aria-label="Language">
           <button data-lang="en" class="active" aria-label="English">EN</button>
           <button data-lang="ko" aria-label="한국어">KO</button>
@@ -71,6 +75,7 @@
   <!-- Footer -->
   <footer style="border-top: 1px solid var(--border-subtle); padding: var(--space-2xl) 0; margin-top: var(--space-3xl);">
     <div class="container">
+      <div class="footer-family" id="footer-family"></div>
       <div class="grid-footer">
         <div>
           <p style="font-size: var(--text-base); color: var(--text-secondary); line-height: 1.65; max-width: 560px;" data-i18n="footer.mission">We believe AI can serve the Great Commission — not replace human connection, but extend it across the most closed border on earth.</p>

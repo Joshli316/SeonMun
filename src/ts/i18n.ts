@@ -4,6 +4,22 @@ interface Translations {
   [key: string]: { en: string; ko: string };
 }
 
+export interface SisterProject {
+  key: 'xuanyan' | 'sendo' | 'truyendao' | 'seonmun';
+  url: string;
+  emoji: string;
+  tag: string;
+  regionKey: string;
+  isMain: boolean;
+}
+
+export const SISTER_PROJECTS: SisterProject[] = [
+  { key: 'xuanyan',   url: 'https://xuanyan-cjf.pages.dev', emoji: '🇨🇳', tag: '宣研',       regionKey: 'sisters.china',   isMain: true  },
+  { key: 'sendo',     url: 'https://sendo.pages.dev',       emoji: '🇯🇵', tag: '宣道',       regionKey: 'sisters.japan',   isMain: false },
+  { key: 'truyendao', url: 'https://truyendao.pages.dev',   emoji: '🇻🇳', tag: '傳道',       regionKey: 'sisters.vietnam', isMain: false },
+  { key: 'seonmun',   url: 'https://seonmun.pages.dev',     emoji: '🇰🇵', tag: '선문 (宣門)', regionKey: 'sisters.nk',      isMain: false },
+];
+
 const strings: Translations = {
   // Nav
   'nav.research': { en: 'Research', ko: '연구' },
@@ -11,6 +27,17 @@ const strings: Translations = {
   'nav.heritage': { en: 'Heritage', ko: '유산' },
   'nav.about': { en: 'About', ko: '소개' },
   'nav.search': { en: 'Search', ko: '검색' },
+  'nav.sisters_link': { en: '← XuanYan family', ko: '← XuanYan 가족' },
+
+  // Sister projects
+  'sisters.china': { en: 'China', ko: '중국' },
+  'sisters.japan': { en: 'Japan', ko: '일본' },
+  'sisters.vietnam': { en: 'Vietnam', ko: '베트남' },
+  'sisters.nk': { en: 'North Korea', ko: '북한' },
+  'sisters.main_label': { en: 'Main project', ko: '메인 프로젝트' },
+  'sisters.heading': { en: 'The Asia Quartet', ko: '아시아 4부작' },
+  'footer.family_title': { en: 'Part of the XuanYan 宣研 family', ko: 'XuanYan 宣研 가족의 일원' },
+  'footer.family_main': { en: 'Main', ko: '메인' },
 
   // Hero
   'hero.title': {
